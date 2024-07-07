@@ -1,0 +1,50 @@
+base_url = "https://konceptosociala.eu.org/blog"
+title = "koncepto sociala"
+description = "This is an example description"
+build_search_index = false
+generate_feed = true
+compile_sass = true
+minify_html = true
+theme = "apollo"
+taxonomies = [{ name = "tags" }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "ayu-dark"
+
+[extra]
+toc = true
+use_cdn = false
+favicon = "/img/logo.svg"
+theme = "dark"              # light, dark, auto, toggle
+comment = true
+fancy_code = true
+dynamic_note = true # a note that can be toggled
+h_anchor_link = true
+mathjax = true
+mathjax_dollar_inline_enable = true
+
+menu = [
+    { name = "home_page", url = "/", weight = 1 },
+    { name = "posts", url = "/posts", weight = 2 },
+    { name = "about", url = "/about", weight = 3 },
+    { name = "tags", url = "/tags", weight = 4 },
+]
+
+socials = [
+    { name = "github", url = "https://github.com/konceptosociala/", icon = "github" },
+    { name = "telegram", url = "https://t.me/ksociala_official", icon = "telegram" },
+]
+
+custom_css = []
+
+[extra.analytics]
+enabled = false
+
+[extra.analytics.goatcounter]
+user = "your_user"
+host = "example.com" # default= goatcounter.com
+
+[extra.analytics.umami]
+website_id = "43929cd1-1e83...."
+host_url = "https://stats.mywebsite.com" # default: https://analytics.eu.umami.is

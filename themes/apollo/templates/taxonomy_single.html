@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+
+{% block main_content %}
+
+{{ post_macros::list_tag_posts(pages=term.pages, tag_name=term.name) }}
+{% set show_comment = false %}
+
+{% endblock main_content %}
