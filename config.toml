@@ -1,6 +1,6 @@
 base_url = "https://konceptosociala.eu.org/blog"
-title = "koncepto sociala"
-description = "This is an example description"
+title = "koncepto sociala blog"
+description = "Blog for Koncepto Sociala website"
 build_search_index = false
 generate_feed = true
 compile_sass = true
@@ -25,26 +25,13 @@ mathjax = true
 mathjax_dollar_inline_enable = true
 
 menu = [
-    { name = "home_page", url = "/", weight = 1 },
-    { name = "posts", url = "/posts", weight = 2 },
-    { name = "about", url = "/about", weight = 3 },
-    { name = "tags", url = "/tags", weight = 4 },
+    { name = "/home", url = "/", weight = 1 },
+    { name = "/about", url = "/about", weight = 2 },
+    { name = "/tags", url = "/tags", weight = 3 },
 ]
 
 socials = [
+    { name = "website", url = "https://konceptosociala.eu.org/", icon = "diaspora" },
     { name = "github", url = "https://github.com/konceptosociala/", icon = "github" },
     { name = "telegram", url = "https://t.me/ksociala_official", icon = "telegram" },
 ]
-
-custom_css = []
-
-[extra.analytics]
-enabled = false
-
-[extra.analytics.goatcounter]
-user = "your_user"
-host = "example.com" # default= goatcounter.com
-
-[extra.analytics.umami]
-website_id = "43929cd1-1e83...."
-host_url = "https://stats.mywebsite.com" # default: https://analytics.eu.umami.is
